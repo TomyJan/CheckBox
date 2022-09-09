@@ -1,10 +1,7 @@
 <div align="center"> 
-<h1 align="center">签到盒</h1>
-[![GitHub stars](https://img.shields.io/github/stars/wenmoux/checkbox?style=flat-square)](https://github.com/wenmoux/checkbox)
-[![GitHub forks](https://img.shields.io/github/forks/wenmoux/checkbox?style=flat-square)](https://github.com/wenmoux/checkbox/network)
-[![GitHub issues](https://img.shields.io/github/issues/wenmoux/checkbox?style=flat-square)](https://github.com/wenmoux/checkbox/issues)
-![GitHub issues](https://img.shields.io/github/languages/code-size/wenmoux/checkbox?style=flat-square)
-</div> 
+<h1 align="center">签到盒</h1></div> 
+[![GitHub stars](https://img.shields.io/github/stars/wenmoux/checkbox?style=flat-square)](https://github.com/wenmoux/checkbox)[![GitHub forks](https://img.shields.io/github/forks/wenmoux/checkbox?style=flat-square)](https://github.com/wenmoux/checkbox/network)[![GitHub issues](https://img.shields.io/github/issues/wenmoux/checkbox?style=flat-square)](https://github.com/wenmoux/checkbox/issues)![GitHub issues](https://img.shields.io/github/languages/code-size/wenmoux/checkbox?style=flat-square)
+
 
 fork 自 https://github.com/Wenmoux/checkbox 
 
@@ -16,6 +13,7 @@ fork 自 https://github.com/Wenmoux/checkbox
 需要什么签到可以去提[issues](https://github.com/wenmoux/checkbox/issues),也欢迎PR  
 关于代码为什么这么烂:  
 开始写的时候就不知道js是啥，也不了解编程，全靠百度，以及抄大佬的代码
+
 # **<font color="red">未经允许,禁止搬运</font>**
  ![运行结果](https://cdn.jsdelivr.net/gh/Wenmoux/wenpic/other/1367573175823623.png)
 # 签到列表
@@ -96,6 +94,7 @@ termux可以使用crontab设置定时任务
 下载源码,安装依赖
 复制一份config.yml.temple文件并改名config.yml 
 在config.yml文件内填入对应cookies(不要更改原有格式
+
 > 注意每个冒号后面都有空格  
 在`config.yml`文件里自行按照格式添加需要的任务,运行
    ```       
