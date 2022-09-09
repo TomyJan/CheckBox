@@ -15,13 +15,13 @@ if (fs.existsSync("./sendNotify.js")) notify = require('./sendNotify')
 let QL = process.env.QL_DIR
 if (QL) {
     console.log("当前是青龙面板,路径："+QL)
-    if(fs.existsSync(`/${QL}/data/config/config.sh`)) console.log("建议更新到最新版青龙再来运行哦,或者手动修改路径叭~")
+    if(fs.existsSync(`/${QL}/config/config.sh`)) console.log("建议更新到最新版青龙再来运行哦,或者手动修改路径叭~")
     cbList = process.env.cbList ? process.env.cbList.split("&") : []
-    if (!fs.existsSync(`/${QL}/data/config/config.yml`)) {
-        console.log("您还没有填写cookies配置文件,请配置好再来运行8...\n配置文件路径/ql/data/config/config.yml\n如没有文件复制一份config.yml.temple并改名为config.yml")
+    if (!fs.existsSync(`./config.yml`)) {
+        console.log("您还没有填写cookies配置文件,请配置好再来运行8...\n配置文件路径./config.yml\n如没有文件复制一份config.yml.temple并改名为config.yml")
         return;
     } else{
-    if(yaml.load) config = yaml.load(fs.readFileSync(`/${QL}/data/config/config.yml`, 'utf8'))
+    if(yaml.load) config = yaml.load(fs.readFileSync(`./config.yml`, 'utf8'))
     else console.log("亲,您的依赖掉啦,但是没有完全掉 请重装依赖\npnpm install  axios crypto crypto-js fs iconv-lite js-yaml yargs\n或者\nnpm install  axios crypto crypto-js fs iconv-lite js-yaml yargs")
      }
 }
@@ -46,7 +46,7 @@ function start(taskList) {
             }
             console.log("------------任务执行完毕------------\n");
             await require("./sendmsg")(logs);
-            if (notify) await notify.sendNotify("签到盒", `${logs}\n\n吹水群：https://t.me/wenmou_car`);
+            if (notify) await notify.sendNotify("签到盒", `${logs}\n\n吹水群：https://t.me/TomyJan_Chat`);
         } catch (err) {
             console.log(err);
         }
